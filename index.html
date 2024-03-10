@@ -26,21 +26,38 @@
             <label for="sex">Jenis Kelamin</label><br />
             <div class="sex">
               <input type="radio" name="male" id="male" />
-              <label for="sex">Pria</label>
+              <label for="sex" id="label">Pria</label>
               <input type="radio" name="male" id="female" />
               <label for="sex">Wanita</label><br />
             </div>
-            <label for="berat">Berat Badan (kg)</label><br />
-            <input type="number" name="berat" id="bb" /><br />
-            <label for="berat">Usia (tahun)</label><br />
-            <input type="number" name="berat" id="berat" /><br />
-            <label for="berat">Tinggi Badan (cm)</label><br />
-            <input type="number" name="berat" id="tb" />
+            <label for="berat" id="label">Berat Badan (kg)</label><br />
+            <input
+              type="number"
+              name="berat"
+              id="bb"
+              placeholder="Inputkan Berat Badan"
+            /><br />
+            <label for="usia" id="label">Usia (tahun)</label><br />
+            <input
+              type="number"
+              name="usia"
+              id="u"
+              placeholder="Inputkan Usia"
+            /><br />
+            <label for="tinggi" id="label">Tinggi Badan (m)</label><br />
+            <input
+              type="number"
+              name="tinggi"
+              id="tb"
+              placeholder="Inputkan Tinggi Badan"
+            />
             <div class="button">
               <button type="button" id="button-submit" onclick="hitung()">
                 Hitung BMI
               </button>
-              <button type="button" id="button-reset">Reset</button>
+              <button type="button" id="button-reset" onclick="reset()">
+                Reset
+              </button>
             </div>
             <br />
           </section>
@@ -72,7 +89,7 @@
             <br />
             <h1 id="hasil">0</h1>
             <br />
-            <h4 id="keterangan">Anda Memiliki Berat Badan Berlebih</h4>
+            <h4 id="keterangan">-</h4>
             <br />
             <button type="button" id="button-download">
               Download Hasil BMI
