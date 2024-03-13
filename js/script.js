@@ -1,17 +1,17 @@
 // button hitung BMI
 function validasi() {
-  var beratbadan = document.getElementById("bb").value;
+  var beratBadan = document.getElementById("bb").value;
   var usia = document.getElementById("u").value;
-  var tinggibadan = document.getElementById("tb").value;
+  var tinggiBadan = document.getElementById("tb").value;
 
   // Cek apakah nilai teks field kosong
-  if (beratbadan.trim() === "") {
+  if (beratBadan.trim() === "") {
     alert("Silakan isi text field terlebih dahulu!");
     return false; // Menghentikan proses
   } else if (usia.trim() === "") {
     alert("Silakan isi text field terlebih dahulu!");
     return false; // Menghentikan proses
-  } else if (tinggibadan.trim() === "") {
+  } else if (tinggiBadan.trim() === "") {
     alert("Silakan isi text field terlebih dahulu!");
     return false; // Menghentikan proses
   }
